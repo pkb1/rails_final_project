@@ -1,0 +1,33 @@
+<table class="student_listings table-bordered table-striped">
+  <thead class= "thead-dark">
+    <tr>
+      <th><%= t('student.student_listing.first_name') %></th>
+      <th><%= t('student.student_listing.last_name') %></th>
+      <th><%= t('student.student_listing.email') %></th>
+      <th><%= t('student.student_listing.year_of_birth') %></th>
+      <th><%= t('student.student_listing.gender') %></th>
+      <th><%= t('student.student_listing.address') %></th>
+      <th><%= t('student.student_listing.fathers_name') %></th>
+      <th><%= t('student.student_listing.mothers_name') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.first_name %></td>
+        <td><%= student.last_name %></td>
+        <td><%= student.email %></td>
+        <td><%= student.year_of_birth %></td>
+        <td><%= student.gender %></td>
+        <td><%= student.address %></td>
+        <td><%= student.fathers_name %></td>
+        <td><%= student.mothers_name %></td>
+        <td><%= link_to t('global.show'), student ,class: "btn btn-primary"%></td>
+        <td><%=  link_to t('global.edit'), edit_student_path(student),class: "btn btn-warning" %></td>
+        <td><%= link_to t('global.destroy'), student, method: :delete, data: { confirm: t('global.are_you_sure') } ,class: "btn btn-danger"%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

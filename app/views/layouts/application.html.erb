@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t("header.rails_final_project_1_application") %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <% if current_user %>
+    <%= link_to t('header.new_student'), new_student_path, class: "btn btn-primary" %>
+    <%= link_to t("header.student_list"), root_path, class: "btn btn-primary" %>
+    <%= link_to t("header.items_list"), items_path, class: "btn btn-primary" %>
+    <%= link_to t("header.live_messages"), messages_path, class: "btn btn-primary" %>
+    <%= link_to t("header.sign_out"), destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+    <% else %>
+      <%= link_to t("header.sign_in"), new_user_session_path, class: "btn btn-primary" %>
+      <%= link_to t("header.sign_up"), new_user_registration_path, class: "btn btn-primary" %>
+    <% end %>
+    <%= link_to t('header.marathi'), root_path(locale: :mr), class: "btn btn-primary" %>
+    <%= link_to t('header.hindi'), root_path(locale: :hi), class: "btn btn-primary" %>
+    <%= link_to t('header.japanese'), root_path(locale: :ja), class: "btn btn-primary" %>
+    <%= link_to t('header.urdu'), root_path(locale: :ur), class: "btn btn-primary" %>
+    <%= link_to t('header.russian'), root_path(locale: :ru), class: "btn btn-primary" %>
+    <%= link_to t('header.english'), root_path(locale: :en), class: "btn btn-primary" %>
+    <%= yield %>
+  </body>
+</html>

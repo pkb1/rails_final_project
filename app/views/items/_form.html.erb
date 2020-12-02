@@ -1,0 +1,43 @@
+<%= form_with(model: item, local: true) do |form| %>
+    <% if item.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(item.errors.count, "error") %> <%= t("global.prohibited_this_item_from_being_saved") %></h2>
+  
+        <ul>
+          <% item.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+   
+  
+    <div class="field">
+      <%= form.label t('items.forms.name') %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label t('items.forms.authorname') %>
+      <%= form.text_field :authorname %>
+    </div>
+
+    <div class="field">
+      <%= form.label t('items.forms.publicationname') %>
+      <%= form.text_field :publicationname %>
+    </div>
+  
+    <div class="field">
+      <%= form.label t('items.forms.quantity') %>
+      <%= form.number_field :quantity %>
+    </div>
+
+    <div class="field">
+      <%= form.label t('items.forms.price') %>
+      <%= form.text_field :price %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit t('global.forms.submit'), class: "btn btn-primary" %>
+    </div>
+  <% end %>

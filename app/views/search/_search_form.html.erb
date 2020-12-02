@@ -1,0 +1,8 @@
+<h1><%= t('search.search') %>:</h1>
+<%= form_with(url: "/search", method: "get") do %>
+  <%= label_tag(:q, t('search.search_for')) %>
+  <%= text_field_tag(:q, "", class: "student_search") %>
+  <%= submit_tag(t('search.search'), class: "btn btn-info") %>
+<% end %>
+<p></p>
+<p></p>

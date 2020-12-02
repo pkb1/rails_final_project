@@ -1,0 +1,124 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+ur:
+ header:
+   rails_final_project_1_application: "ریلز فائنل پروجیکٹ 1 کی درخواست"
+   urdu: "اردو"
+   new_student: "نیا طالب علم"
+   student_list: "طلباء کی فہرست"
+   items_list: "کتاب کی فہرست"
+   live_messages: "زندہ پیغامات"
+   sign_out: "باہر جائیں"
+   sign_in: "سائن ان"
+   sign_up: "سائن اپ"
+   english: "English"
+   russian: "Russian"
+   marathi: "Marathi"
+   hindi: "Hindi"
+   japanese: "Japanese"
+ 
+ items:
+   items: "لائبریری نظام"
+   download_as_excel: "بطور ایکسل ڈاؤن لوڈ کریں"
+   download_as_csv: "CSV کے بطور ڈاؤن لوڈ کریں"
+   download_as_pdf: "پی ڈی ایف کے بطور ڈاؤن لوڈ کریں"
+   upload_from_excel: "ایکسل سے اپ لوڈ کریں"
+   new_item: "نئی چیز"
+   id: "ID"
+   name: "نام"
+   authorname: "مصنف کا نام"
+   publicationname: "اشاعت نام"
+   quantity: "مقدار"
+   price: "قیمت"
+   editing_item: "آئٹم میں ترمیم"
+   forms:
+      id: "ID"
+      name: "نام"
+      authorname: "مصنف کا نام"
+      publicationname: "اشاعت نام"
+      quantity: "مقدار"
+      price: "قیمت"
+ 
+ global:
+   show: "دکھائیں"
+   edit: "ترمیم"
+   destroy: "تباہ"
+   are_you_sure: "کیا تمہیں یقین ہے؟"
+   back: "پیچھے"
+   prohibited_this_item_from_being_saved: "اس چیز کو محفوظ ہونے سے منع کیا ہے:"
+   forms:
+     submit: "جمع کرائیں"
+ 
+ items_imports:
+   import_items_from_excel: "ایکسل سے اشیا درآمد کریں"
+   note_only_spreadsheets: "نوٹ: صرف اس اسپریڈشیٹ کو درآمد کریں جو پہلے اس ایپلی کیشن سے ڈاؤن لوڈ کی گئیں۔"
+   requirements: "تقاضے"
+   here_you_could: "یہاں آپ اپنے ماڈل کے ل place اپنی توثیق کی فہرست دے سکتے ہیں۔"
+   that_way_your_user: "اس طرح آپ کے صارف کے پاس درآمد کے کامیاب مواقع کا بہتر امکان ہے"
+   select_file: "فائل منتخب کریں"
+   import_file: "فائل درآمد کریں"
+   download_sample_excel: "نمونہ ایکسل ڈاؤن لوڈ کریں"
+   file: "فائل"
+   errors:
+     prevented_us: "ہمیں اس سے روکا
+     آپ کی اسپریڈشیٹ کو درآمد کرنا۔ براہ کرم اپنی اسپریڈشیٹ کو اپ ڈیٹ کریں اور اگین کو آزمائیں۔"
+ 
+ 
+ student:
+   student: "طالب علم"
+   age: "عمر"
+   first_name: "پہلا نام"
+   last_name: "آخری نام"
+   email: "ای میل"
+   year_of_birth: "پیدائش کا سال"
+   gender: "صنف"
+   address: "پتہ"
+   fathers_name: "والد کا نام"
+   mothers_name: "ماں کا نام"
+   editing_student: "ترمیم طلبہ"
+   new_student: "نیا طالب علم"
+   showing_the_details: "اس کی تفصیلات دکھا رہا ہے:"
+   errors:
+     prohibited_this_student: "اس طالب علم کو بچانے سے منع کیا:"
+   student_listing:
+     first_name: "پہلا نام"
+     last_name: "آخری نام"
+     email: "ای میل"
+     year_of_birth: "پیدائش کا سال"
+     gender: "صنف"
+     address: "پتہ"
+     fathers_name: "والد کا نام"
+     mothers_name: "ماں کا نام"
+ 
+ search:
+   search: "تلاش"
+   search_for: "تلاش کریں:"

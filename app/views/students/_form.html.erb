@@ -1,0 +1,62 @@
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> <%= t('student.errors.prohibited_this_student') %></h2>
+
+      <ul>
+        <% student.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label t('student.first_name') %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.last_name') %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.email') %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.year_of_birth') %>
+    <%= form.number_field :year_of_birth %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.gender') %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.address') %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.fathers_name') %>
+    <%= form.text_field :fathers_name %>
+  </div>
+
+  <div class="field">
+  <%= form.label t('student.mothers_name') %>
+    <%= form.text_field :mothers_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="actions">
+  <%= form.submit t('global.forms.submit'), class: "btn btn-primary" %>
+  </div>
+<% end %>

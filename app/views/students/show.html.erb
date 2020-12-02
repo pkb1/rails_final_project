@@ -1,0 +1,54 @@
+<div class="container hr">
+<p id="notice"><%= notice %></p>
+
+<h1> <%= t('student.showing_the_details') %><%= name(@student) %></h1>
+<%=  link_to t('global.edit'), edit_student_path(@student),class: "btn btn-warning" %> |
+<%= link_to t('global.back'), students_path ,class: "btn btn-info"%>
+<p> <strong><%= t('student.age') %>: </strong><%= age(@student) %></p>
+<p>
+  <strong><%= t('student.student_listing.first_name') %>: </strong>
+  <%= @student.first_name %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.last_name') %>: </strong>
+  <%= @student.last_name %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.email') %>: </strong>
+  <%= @student.email %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.year_of_birth') %>: </strong>
+  <%= @student.year_of_birth %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.gender') %>: </strong>
+  <%= @student.gender %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.address') %>: </strong>
+  <%= @student.address %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.fathers_name') %>: </strong>
+  <%= @student.fathers_name %>
+</p>
+
+<p>
+  <strong><%= t('student.student_listing.mothers_name') %>: </strong>
+  <%= @student.mothers_name %>
+</p>
+
+<div style="width:400px; height:auto">
+        <%= link_to image_tag(@student.image, style:'width:100%'), students_path %>
+</div>
+
+<%=  link_to t('global.edit'), edit_student_path(@student),class: "btn btn-warning" %> |
+<%= link_to t('global.back'), students_path ,class: "btn btn-info"%>
+</div>

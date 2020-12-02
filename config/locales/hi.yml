@@ -1,0 +1,125 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+ 
+hi:
+ header:
+   rails_final_project_1_application: "अंतिम परियोजना 1 आवेदन रेल"
+   hindi: "हिंदी"
+   new_student: "नया विद्यार्थी"
+   student_list: "छात्र सूची"
+   items_list: "पुस्तक सूची"
+   live_messages: "लाइव संदेश"
+   sign_out: "प्रस्थान करें"
+   sign_in: "साइन इन करें"
+   sign_up: "साइन अप करें"
+   russian: "Russian"
+   english: "English"
+   marathi: "Marathi"
+   urdu: "Urdu"
+   japanese: "Japanese"
+
+
+ 
+ items:
+   items: "पुस्तकालय प्रणाली"
+   download_as_excel: "एक्सेल के रूप में डाउनलोड करें"
+   download_as_csv: "CSV के रूप में डाउनलोड करें"
+   download_as_pdf: "पीडीएफ के रूप में डाउनलोड करें"
+   upload_from_excel: "एक्सेल से अपलोड करें"
+   new_item: "नई वस्तु"
+   id: "आईडी"
+   name: "नाम"
+   authorname: "लेखक का नाम"
+   publicationname: "प्रकाशन का नाम"
+   quantity: "मात्रा"
+   price: "कीमत"
+   editing_item: "एडिटिंग आइटम"
+   forms:
+     id: "आईडी"
+     name: "नाम"
+     authorname: "लेखक का नाम"
+     publicationname: "प्रकाशन का नाम"
+     quantity: "मात्रा"
+     price: "कीमत"
+ 
+ global:
+   show: "प्रदर्शन"
+   edit: "संपादित करें"
+   destroy: "नष्ट"
+   are_you_sure: "क्या आपको यकीन है?"
+   back: "वापस"
+   prohibited_this_item_from_being_saved: "इस आइटम को सहेजे जाने से प्रतिबंधित:"
+   forms:
+     submit: "प्रस्तुत"
+ 
+ items_imports:
+   import_items_from_excel: "एक्सेल से आइटम आयात करें"
+   note_only_spreadsheets: "नोट: केवल आयात स्प्रेडशीट जो पहले इस एप्लिकेशन से डाउनलोड की गई थी।"
+   requirements: "आवश्यकताएँ"
+   here_you_could: "यहां आप अपने मॉडल के लिए मान्यताओं को सूचीबद्ध कर सकते हैं"
+   that_way_your_user: "इस तरह आपके उपयोगकर्ता के पास सफल आयात का बेहतर मौका है"
+   select_file: "फ़ाइल का चयन करें"
+   import_file: "फ़ाइल आयात करें"
+   download_sample_excel: "नमूना एक्सेल डाउनलोड करें"
+   file: "फ़ाइल"
+   errors:
+     prevented_us: "हमें रोका गया
+     अपनी स्प्रेडशीट आयात करना। कृपया अपनी स्प्रैडशीट अपडेट करें और एगिन आज़माएँ।"
+ 
+ student:
+   student: "छात्र"
+   age: "आयु"
+   first_name: "पहला नाम"
+   last_name: "उपनाम"
+   email: "ईमेल"
+   year_of_birth: "जन्म का साल"
+   gender: "लिंग"
+   address: "पता"
+   fathers_name: "पिता का नाम"
+   mothers_name: "माता का नाम"
+   editing_student: "छात्र का संपादन"
+   new_student: "नया विद्यार्थी"
+   showing_the_details: "का विवरण दिखा रहा है:"
+   errors:
+     prohibited_this_student: "इस छात्र को सहेजे जाने से प्रतिबंधित:"
+   student_listing:
+     first_name: "पहला नाम"
+     last_name: "उपनाम"
+     email: "ईमेल"
+     year_of_birth: "जन्म का साल"
+     gender: "लिंग"
+     address: "पता"
+     fathers_name: "पिता का नाम"
+     mothers_name: "माता का नाम"
+ 
+ search:
+   search: "खोज"
+   search_for: "निम्न को खोजें:"

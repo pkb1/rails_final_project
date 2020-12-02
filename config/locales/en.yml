@@ -1,0 +1,123 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+ 
+en:
+ header:
+   rails_final_project_1_application: "Rails Final Project 1 Application"
+   english: "English"
+   new_student: "New Student"
+   student_list: "Student List"
+   items_list: "Book List"
+   live_messages: "LIVE Messages"
+   sign_out: "Sign Out"
+   sign_in: "Sign In"
+   sign_up: "Sign Up"
+   russian: "Russian"
+   marathi: "Marathi"
+   hindi: "Hindi"
+   urdu: "Urdu"
+   japanese: "Japanese"
+ 
+ items:
+   items: "Library System"
+   download_as_excel: "Download as Excel"
+   download_as_csv: "Download as CSV"
+   download_as_pdf: "Download as PDF"
+   upload_from_excel: "Upload From Excel"
+   new_item: "New Item"
+   id: "ID"
+   name: "Name"
+   authorname: "Author Name"
+   publicationname: "Publication Name"
+   quantity: "Quantity"
+   price: "Price"
+   editing_item: "Editing Item"
+   forms:
+      id: "ID"
+      name: "Name"
+      authorname: "Author Name"
+      publicationname: "Publication Name"
+      quantity: "Quantity"
+      price: "Price"
+ 
+ global:
+   show: "Show"
+   edit: "Edit"
+   destroy: "Destroy"
+   are_you_sure: "Are you sure?"
+   back: "Back"
+   prohibited_this_item_from_being_saved: "prohibited this item from being saved:"
+   forms:
+     submit: "Submit"
+ 
+ items_imports:
+   import_items_from_excel: "Import Items From Excel"
+   note_only_spreadsheets: "Note: Only import spreadsheets that were previously downloaded from this application."
+   requirements: "Requirements"
+   here_you_could: "Here you could list the validations you have in place for your model"
+   that_way_your_user: "That way your user has a better chance of successful import"
+   select_file: "Select File"
+   import_file: "Import File"
+   download_sample_excel: "Download Sample Excel"
+   file: "File"
+   errors:
+     prevented_us: "prevented us from
+     importing your spreadsheet. Please update your spreadsheet and try agin."
+ 
+ student:
+   student: "Student"
+   age: "age"
+   first_name: "first_name"
+   last_name: "last_name"
+   email: "email"
+   year_of_birth: "year_of_birth"
+   gender: "gender"
+   address: "address"
+   fathers_name: "fathers_name"
+   mothers_name: "mothers_name"
+   editing_student: "Editing Student"
+   new_student: "New Student"
+   showing_the_details: "Showing the details of:"
+   errors:
+     prohibited_this_student: "prohibited this student from being saved:"
+   student_listing:
+     first_name: "First Name"
+     last_name: "Last Name"
+     email: "Email"
+     year_of_birth: "Year of birth"
+     gender: "Gender"
+     address: "Address"
+     fathers_name: "Fathers name"
+     mothers_name: "Mothers name"
+ 
+ search:
+   search: "Search"
+   search_for: "Search for:"

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<div class="container hr">
+<div class="student_table">
+
+    <%= render partial: "search/search_form" %>
+    <h1><%= t('student.student') %></h1>
+    <%= render partial: "student_listing"%>
+
+    <br>
+
+    <%= link_to t('header.new_student'), new_student_path ,class: "btn btn-info"%>
+</div>
+</div>

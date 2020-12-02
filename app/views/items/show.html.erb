@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+<div class="container hr">
+  <%= link_to t('global.edit'), edit_item_path(@item), class: "btn btn-warning" %> |
+  <%= link_to t('global.back'), items_path, class: "btn btn-secondary" %>
+
+  <p>
+    <strong><%= t('items.id') %>:</strong>
+    <%= @item.id %>
+  </p>
+
+  <p>
+    <strong><%= t('items.name') %>:</strong>
+    <%= @item.name %>
+  </p>
+
+  <p>
+    <strong><%= t('items.authorname') %>:</strong>
+    <%= @item.authorname %>
+  </p>
+
+  <p>
+    <strong><%= t('items.publicationname') %>:</strong>
+    <%= @item.publicationname %>
+  </p>
+
+  <p>
+    <strong><%= t('items.quantity') %>:</strong>
+    <%= @item.quantity %>
+  </p>
+
+  <p>
+    <strong><%= t('items.price') %>:</strong>
+    <%= @item.price %>
+  </p>
+
+  <%= link_to t('global.edit'), edit_item_path(@item), class: "btn btn-warning" %> |
+  <%= link_to t('global.back'), items_path, class: "btn btn-secondary" %>
+</div>

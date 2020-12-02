@@ -1,0 +1,8 @@
+<div class="container hr">
+<h1><%= t('student.editing_student') %</h1>
+<p></p>
+<%= render 'form', student: @student %>
+<p></p>
+<%= link_to t('global.show'), @student,class: "btn btn-secondary" %> |
+<%= link_to t('global.back'), students_path,class: "btn btn-info" %>
+</div>

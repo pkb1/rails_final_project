@@ -1,0 +1,27 @@
+<table class="items_listings table-bordered table-striped">
+   <thead>
+     <tr>
+       <th><%= t('items.name') %></th>
+       <th><%= t('items.authorname') %></th>
+       <th><%= t('items.publicationname') %></th>
+       <th><%= t('items.quantity') %></th>
+       <th><%= t('items.price') %></th>
+       <th colspan="3"></th>
+     </tr>
+   </thead>
+ 
+   <tbody>
+     <% @items.each do |item| %>
+       <tr>
+         <td><%= item.name %></td>
+         <td><%= item.authorname %></td>
+         <td><%= item.publicationname %></td>
+         <td><%= item.quantity %></td>
+         <td><%= item.price %></td>
+         <td><%= link_to t('global.show'), item, class: "btn btn-primary" %></td>
+         <td><%= link_to t('global.edit'), edit_item_path(item), class: "btn btn-warning" %></td>
+         <td><%= link_to t('global.destroy'), item, method: :delete, data: { confirm: t('global.are_you_sure') }, class: "btn btn-danger" %></td>
+       </tr>
+     <% end %>
+   </tbody>
+ </table>
